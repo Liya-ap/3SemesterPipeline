@@ -19,6 +19,6 @@ public class BasicTest {
         int number = 10;
         int numberBigger = 20;
 
-        assertThat(number, greaterThan(numberBigger));
+        assertThat(number, not(greaterThan(numberBigger)));
     }
 }
