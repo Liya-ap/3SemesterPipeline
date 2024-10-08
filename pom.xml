@@ -20,12 +20,24 @@
         <hamcrest.version>2.0.0.0</hamcrest.version>
         <testcontainers.version>1.18.0</testcontainers.version>
         <hikari.version>5.1.0</hikari.version>
+        <javalin.version>6.3.0</javalin.version>
 
         <!-- DATABASE PROJECT NAME ON SERVER  -->
         <db.name>jpademo</db.name>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>io.javalin</groupId>
+            <artifactId>javalin</artifactId>
+            <version>${javalin.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.16</version>
+        </dependency>
 
         <!--        https://www.baeldung.com/jackson-->
         <dependency>
